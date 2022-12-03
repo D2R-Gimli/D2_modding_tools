@@ -1,0 +1,4 @@
+Photoshop Plugin for DSS files
+dxt5 - kaiser
+
+https://github.com/GameTechDev/Intel-Texture-Works-Plugin/releases

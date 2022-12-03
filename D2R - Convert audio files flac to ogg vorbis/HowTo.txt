@@ -1,0 +1,23 @@
+[Tutorial] Convert audio files (flac to ogg vorbis)
+
+Post by MilesTeg » Mon Oct 18, 2021 12:00 pm
+Simple tutorial to convert flac to ogg in D2R.
+
+Advantages: you save space & memory. Useful when you extracted the whole casc (40GB) for modding.
+
+    Get yourself ffmpeg [1]
+    In the Batch converter you first need to add a new profile (via app wizard \ create enc audio preset \ vorbis )
+    for starters use the \Data\hd\global\music\introedit_hd.flac
+    make sure output path is ".\" (source dir)
+    convert with "-vn -c:a libvorbis".
+    if successful delete the flac and start D2R with -direct -txt (you shouldn't hear any intro music)
+    rename the .ogg extensions to .flac [2]
+    profit!
+
+Tools
+
+[1] highly recommend "FFmpeg Batch AV Converter" from https://ffmpeg-batch.sourceforge.io/ very convenient and user friendly.
+[2] use AntRenamer for batch processing https://www.fosshub.com/Ant-Renamer.html
+
+Source
+Source: Lavendar_Fragrance on reddit https://www.reddit.com/r/Diablo/comments/q4xsst/d2r_skip_intro_videos_mod_reduce_memory_mod/

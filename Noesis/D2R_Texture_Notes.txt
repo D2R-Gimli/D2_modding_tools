@@ -1,0 +1,1 @@
+Export jpg, modify with ps, load jpg with noesis and export as .texture with adv command "-dxt5".

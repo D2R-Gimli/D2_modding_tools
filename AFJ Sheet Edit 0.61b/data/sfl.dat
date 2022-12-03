@@ -1,0 +1,6 @@
+# SFL - Standard Function Library
+
+lg[1]=log(arg1)
+grad2rad[1]=rad(grad2deg(arg1))
+
+#end
