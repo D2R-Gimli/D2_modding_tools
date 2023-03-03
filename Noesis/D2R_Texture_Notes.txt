@@ -1,1 +1,4 @@
-Export jpg, modify with ps, load jpg with noesis and export as .texture with adv command "-dxt5".
+Export jpg, modify with ps, load jpg with noesis and export as .texture with adv command "-DXT5".
+In some cased you need "-DXT1"
+
+For Textures, try "-RGBA32"
