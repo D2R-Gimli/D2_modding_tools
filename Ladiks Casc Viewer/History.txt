@@ -1,6 +1,11 @@
 CascView History
 ================
 
+Version 2.3.0.250
+ - Updated viewer for .unity3d files
+ - Fixed image view issue with non-standard DPI
+ - Fixed issues with Drag'n'drop
+
 Version 2.3.0.241
  - Image Viewer can now cycle through the directory (view next/prev file)
 
