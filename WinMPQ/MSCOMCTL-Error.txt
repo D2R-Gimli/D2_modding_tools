@@ -1,0 +1,21 @@
+MSCOMCTL.OCX Error
+
+If you recive this error, you have to manual install VisualBasic system files.
+Download: https://www.microsoft.com/en-us/download/details.aspx?id=10019
+
+extract with zip
+
+copy mscomctl.ocx to the following path (depending on your system)
+64-bit: C:\Windows\SysWOW64
+32-bit: C:\Windows\System32
+
+windows key -> cmd -> run as admin
+64-bit:
+cd C:\Windows\SysWOW64
+regsvr32 mscomctl.ocx
+
+32-bit:
+cd C:\Windows\System32
+regsvr32 mscomctl.ocx
+
+Done
