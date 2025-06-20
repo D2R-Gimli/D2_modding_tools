@@ -1,0 +1,64 @@
+<HTML>
+<HEAD><TITLE>Using J's Palette Editor</TITLE>
+</HEAD>
+<BODY>
+<h1>Using J’s Palette Editor</h1>
+<ul>
+<li>My palette editor allows you to edit colour palette files and create source files to use in your programs.</li>
+<li>The brightness adjuster can be used to adjust the brightness of the palette entries.  It can also change the brightness in specificly red, green, and blue.</li>
+<li>The colour contrast adjuster, well, lets you adjust the colour contrast of all the palette entries.  You can also grayscale the image by using a really low colour contrast.</li>
+<li>The program is very easy to use.</li>
+</ul>
+<h2>Source Code Files</h2>
+<ul>
+<li>You can create source code for JavaScript, Delphi, and c.  These files contain a declaration of an array that stores all the palette entries. </li> 
+<li>If you want to include the palette in a site, you can create an html document.</li>
+</ul>
+<h2>Credits</h2>
+This program was created from a section of a Map Editor I was creating for the GameBoy Advanced.  If you want the source code, just email me at <A href="mailto:greijos@hotmail.com">greijos@hotmail.com</A>.  If you find a bug, please contact me.
+<br>
+<br>
+<hr>
+<h2>Palette File Formats</h2>
+<h3>Jasc PaintShop Palettes (*.pal)</h3>
+<ul>
+<li>These are textfiles that store each palette entry on a separate line and separate the red, green, and blue values with single spaces.</li>
+<li>Load a Jasc Palette into notepad and you'll get a good idea of it.  Check the spec's for more detail.</li>
+</ul>
+<h3>Microsoft Palettes (*.pal)</h3>
+<ul>
+<li>These are binary files that store each palette entry as a 32-bit value.</li>
+<li>There is 27 bytes of header before the start of the palette entry data.</li>
+<li>There is a dword starting at the 23<sup>rd</sup> byte defining the number of palette entries in the file.</li>
+<li>The 1<sup>st</sup> palette entry starts at the 27<sup>th</sup> byte.</li>
+<li>Check Microsoft's spec's for more details.</li>
+</ul>
+
+<h3>Adobe Colour Tables</h3>
+<ul>
+<li>These are binary files that store each palette entry as a 24-bit value.  There is no header section.  It is strictly red, green, and blue values throughout the files.</li>
+</ul>
+
+<h3>GameBoy Advanced Palettes (*.GBAPal)</h3>
+<ul>
+<li>This format is my own creation.</li>
+<li>It is like the ACT files except each palette entry is stored as a word.</li>
+<li>A little accuracy is removed from the red, green and blue values but it is almost invisible.</li>
+<li>In binary, this is the format of the bits in each palette entry: ?BBBBBGGGGGRRRRR.</li>
+<li>The question mark stands for an unused bit.</li>
+</ul>
+
+<h3>Paletted Bitmaps (*.bmp)</h3>
+<ul>
+<li>You can get the colour palette from a bitmap by loading it in.  If the bitmap doesn't have a palette, you will be told.</li>
+<li>The palettes can be monochrome, 4-bit(16 colour), 8-bit(256 colour) and it will still be loaded.  Any unused palette entries are turned black.</li>
+<li>These bitmaps are just normal Windows bitmaps.</li>
+</ul>
+
+<h3>Icons (*.ico)</h3>
+<ul>
+<li>A complete format specification can be found at <a href="http://services.simac.be/vnc/single/icoFormat.html#MICCUR-DMYID.2">http://services.simac.be/vnc/single/icoFormat.html#MICCUR-DMYID.2</a>.</li>
+</ul>
+
+</BODY>
+</HTML>
