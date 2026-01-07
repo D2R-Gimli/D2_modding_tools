@@ -1,0 +1,13 @@
+Changes in dt1extr.c
+
+   // make a grey background -> changed to rgb 0,63,63 which should be 0,255,255 or #00ffff cyan which is the transparent color 1 of the act0 palette
+   //the_pal[0].r = 24;
+   //the_pal[0].g = 24;
+   //the_pal[0].b = 24;
+   //fclose(in);
+   
+   // make a cyan act0 background
+   the_pal[0].r = 0;
+   the_pal[0].g = 63;
+   the_pal[0].b = 63;
+   fclose(in);
