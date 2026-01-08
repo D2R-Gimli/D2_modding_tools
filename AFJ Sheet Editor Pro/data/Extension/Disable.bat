@@ -1,1 +1,0 @@
-@regsvr32 /s /u SheetShell.dll
