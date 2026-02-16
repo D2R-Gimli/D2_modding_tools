@@ -1,0 +1,4 @@
+data/global/ui/automap
+
+MaxiMap.dc6 -> up to 16x32 (BxH) pixel
+MaxiMapS.dc6 -> up to 8x16 pixel
